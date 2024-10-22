@@ -31,7 +31,7 @@ export function Model(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/untitled.glb') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group position={[-2.249, 0.182, 0]} rotation={[1.723, 0, -1.528]} scale={0.2}>
+      <group position={[-2.1, 0.182, 0]} rotation={[1.723, 0, -1.528]} scale={0.2}>
         <mesh
           castShadow
           receiveShadow

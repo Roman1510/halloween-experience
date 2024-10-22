@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber'
 import './App.css'
-import { Box, OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
+import { Model } from './components/Model'
 
 function App() {
 
@@ -8,9 +9,8 @@ function App() {
     <>
       <div style={{ width: '100%', height: '100%' }}>
         <Canvas>
-          <Box position={[0, 0, 0]} args={[1, 1, 1]}>
-            <meshBasicMaterial color={'red'} />
-          </Box>
+          <Model />
+          <ambientLight />
           <OrbitControls />
         </Canvas>
       </div>
